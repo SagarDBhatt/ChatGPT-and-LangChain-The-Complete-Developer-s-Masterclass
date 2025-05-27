@@ -1,6 +1,27 @@
 # ChatGPT-and-LangChain-The-Complete-Developer-s-Masterclass
 Udemy course on "Intensive masterclass on ChatGPT, LangChain, and Python. Make production-ready apps focused on real-world AI integration"
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+My notes on lectures and topics in simple words. 
+
+May 25th, 2025
+
+1) PDF.ai is a web application which takes the PDF and then user can ask any question from the PDF. 
+=> There are 2 approaches. a) Send the entire PDF and question to chatGPT. But this will fail because of token error. 
+
+=> b) We can OCR the PDF, chunk the OCR text and then send users question with most relevant chunk of OCR text and then answer users question. (We will develop this approach)
+--> Chunk size usually 1000 characters long. But can be configured. 
+--> chatGPT model use raw essence of each chunk of text by embeddings (Using Embedding Creation Algorithm). Embeddings is nothing but the array of numbers with the size of 1536 elements/ digits. Each digits represents what could be the essense of the text.
+--> So in other words, the E2E flow is : Upload PDF <-> Parse Text from PDF <-> Break text into chunks <-> Embeddings to find essence of each chunk <-> Find most relevant chunk using embeddings and store in vector DB <-> Format question + chunk into prompt <-> get answer from chatGPT
+
+2) What is LangChain?
+=> LangChain is the tool to automate all the above steps of E2E flow. Like to read PDF, chunking, embeddings, Prompting and more stages can be automate using LangChain.
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 What you'll learn
 Integrate ChatGPT into production-style apps with LangChain
 Use LangChain components to build complex text generation pipelines
