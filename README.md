@@ -4,6 +4,14 @@ Udemy course on "Intensive masterclass on ChatGPT, LangChain, and Python. Make p
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 My notes on lectures and topics in simple words. 
 
+May 27th, 2025
+
+4) Install openai package: $pip install openai
+    - Note: $pip show openai command will show openai version which is 0.27. This is older version and does not have AzureOpenAI classes. (Only available over 1.0.0 version)
+    - $pip install --upgrade "openai>=1.0.0" command to update the openai to newer version.
+3) Start the virtual env : $pipenv shell
+
+
 May 25th, 2025
 
 1) PDF.ai is a web application which takes the PDF and then user can ask any question from the PDF. 
